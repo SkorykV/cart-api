@@ -1,14 +1,18 @@
-# vscode directory
-.vscode
-# git directory
-.git
-# node_modules directory
+# dependencies will be installed in an image
 node_modules
+# vscode directory needed only for develop purposes
+.vscode
+# git directory is not needed in prod
+.git
+# changing scripts for deploy should not effect docker image 
+scripts
+# elastic beanstalk config
+.elasticbeanstalk
 # all files with unit tests
 **/*.spec.ts
 # directory with e2e tests
 test
-# Readme files
+# Readme file
 README.md
 # prettier config
 .prettierrc
